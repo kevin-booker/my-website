@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>柏霖的電商</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+ <!-- 導覽列 -->
+  <div class="navbar">
+  <div class="navbar-left">首頁</div>
+  <div class="navbar-center">柏霖的商店</div>
+  </div>
+  <!-- 金幣區塊 -->
+  <div class="coin-box">
+    <span class="coin-icon">💰</span>
+    <span id="coin-count">100</span>
+  </div>
+
+  <!-- 商品區塊 -->
+  <div class="product-container">
+    <div class="product-card" onclick="goToProduct('product1.html')">
+      <img src="img1.png" alt="商品1圖片" class="product-image">
+      <h3>商品 1</h3>
+      <p>NT$100</p>
+    </div>
+    <div class="product-card" onclick="goToProduct('product2.html')">
+      <img src="img2.png" alt="商品2圖片" class="product-image">
+      <h3>商品 2</h3>
+      <p>NT$200</p>
+    </div>
+    <div class="product-card" onclick="goToProduct('product3.html')">
+      <img src="img3.png" alt="商品3圖片" class="product-image">
+      <h3>商品 3</h3>
+      <p>NT$300</p>
+    </div>
+  </div>
+</body>
+</html>

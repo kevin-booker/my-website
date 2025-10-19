@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("./背景.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "微軟正黑體", sans-serif;
+}
+
+/* 金幣區塊 */
+.coin-box {
+  display: flex;
+  justify-content: flex-end;  /* 右對齊 */
+ margin: 0 30px;              /* 左右距離保留，去掉上下 margin */
+  position: relative;           /* 新增：讓它在文檔流中可調整 z-index 和 top */
+  top: 100px;                    /* 新增：距離 Navbar 高度 */
+  margin-left: auto;           /* 將方塊推到右邊 */
+  margin-right: 30px;          /* 距離右邊邊界 */
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 70px; 
+}
+
+.coin-icon {
+  font-size: 22px;
+}
+
+/* 商品區塊 */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 150px;
+   padding-top: 120px;
+
+}
+
+.product-card {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #3498db; /* 藍色，可換 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  position: fixed; /* 固定在上方 */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-center {
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+}
+
+.navbar-left, .navbar-right {
+  flex: 0;
+}
